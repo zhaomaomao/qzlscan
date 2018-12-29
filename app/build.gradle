@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.quanzhilian.qzlscan"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        myConfig {
+            storeFile file("key.jks")
+            storePassword "1qaz2wsx"
+            keyAlias "qzlscan"
+            keyPassword "1qaz2wsx"//将这里的“**”替换成自己的信息
+        }
+    }
+    buildTypes {
+        release {
+            //signingConfig  signingConfigs.myConfig
+            // minifyEnabled true
+            // buildConfigField "boolean","LOG_DEBUG",false
+            minifyEnabled false
+            zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.myConfig
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.myConfig
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a','x86_64'
+            universalApk true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile 'com.google.code.gson:gson:2.4'
+    compile files('libs/ScanDecode.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jiechic.library:xUtils:2.6.14'
+    compile 'com.alibaba:fastjson:1.1.42.android'
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.speedata:psam:1.5.0'
+    compile 'com.speedata:deivice:+'
+    testCompile 'junit:junit:4.12'
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
+}

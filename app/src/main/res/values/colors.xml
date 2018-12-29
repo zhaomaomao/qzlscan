@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- 系统默认字体颜色 -->
+    <color name="app_font_default">#555050</color>
+    <color name="app_font_red">#c80000</color>
+    <color name="app_weaken_font_default">#878080</color>
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+    <color name="tab_selected_color">#ff0000</color>
+    <color name="app_background">#f5f5f5</color>
+
+    <!--公共颜色-->
+    <!-- 横线的颜色 -->
+    <color name="line_color1">#EBEBEB</color>
+    <color name="line_color">#C8C8C8</color>
+    <color name="primary">#2196F3</color>
+    <color name="line_bg1">#ebebeb</color>
+    <!--背景色-->
+    <color name="background">#EAEAEA</color>
+    <!--光标颜色-->
+    <color name="color_cursor">#ff0000</color>
+    <!--文字默认颜色-->
+    <color name="text_default">#555050</color>
+    <!--文字默认颜色-->
+    <color name="text_edit">#457DD7</color>
+    <!--文字备注颜色-->
+    <color name="text_des">#666666</color>
+    <!--底部选择颜色-->
+    <color name="bottom_text_select">#FFB90F</color>
+    <!--默认颜色-->
+    <color name="default_color">#008eb7</color>
+    <!--默认颜色点击颜色加深-->
+    <color name="default_color_click">#FFB90F</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!--酸橙色-->
+    <color name="lime">#00FF00</color>
+    <!--春天的绿色-->
+    <color name="SpringGreen">#FFB90F</color>
+    <color name="gray">#808080</color>
+
+    <color name="normal_red">#c80000</color>
+    <color name="normal_red1">#FB362D</color>
+    <color name="red_default">#fc021a</color>
+
+    <!--登录按钮-->
+    <color name="normal_login_button">#01a2ca</color>
+    <color name="button_context_white">#ffffff</color>
+    <color name="focused_login_button">#009ACD</color>
+    <color name="in_scan_default">#01e19f</color>
+    <color name="out_scan_default">#e1ad52</color>
+    <color name="change_default">#5481dd</color>
+    <color name="machining_default">#e4759c</color>
+
+    <!--普通按钮-->
+    <color name="normal_bttton">#5481dd</color>
+    <color name="normal_gray">#e0dfdf</color>
+</resources>

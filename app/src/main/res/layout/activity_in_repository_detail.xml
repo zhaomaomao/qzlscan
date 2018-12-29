@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanzhilian.qzlscan.activities.inrepository.InRepositoryDetailActivity">
+    <!--页面头部-->
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/common_header_title_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bill_no"
+                style="@style/detail_content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="入库单号：加载中..." />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="供货单位：加载中..."
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_create_datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="创建时间：加载中..."
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_repository_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="入库仓库：加载中..."
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_bill_state_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_repository_state_title"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_bill_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未扫码入库"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/detail_content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品信息" />
+
+            <com.quanzhilian.qzlscan.views.CustomeListView
+                android:id="@+id/lv_bill_product_item"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null">
+
+            </com.quanzhilian.qzlscan.views.CustomeListView>
+
+            <TextView
+                style="@style/detail_content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品详情" />
+
+            <com.quanzhilian.qzlscan.views.CustomeListView
+                android:id="@+id/lv_bill_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null">
+
+            </com.quanzhilian.qzlscan.views.CustomeListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/scan_in_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/in_scan_default"
+            android:text="@string/detail_scan_in_product"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size_max_large"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/approve_in_bill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_default"
+            android:text="@string/approve_in_bill"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size_max_large"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

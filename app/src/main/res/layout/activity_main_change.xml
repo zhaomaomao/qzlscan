@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.quanzhilian.qzlscan.activities.inrepository.MainInRepositoryActivity">
+
+    <!--页面头部-->
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/common_header_title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/tv_repository_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large"
+                android:text="@string/loading" />
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_change_repository"-->
+            <!--style="@style/button_context_white"-->
+            <!--android:background="@color/out_scan_default"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:text="更改仓库" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_scan_product"
+            style="@style/main_item_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/change_default"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/scan_in" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/scan_product"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_middle_large" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

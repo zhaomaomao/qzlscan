@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">纸易云扫码</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="version_name">loading</string>
+    <string name="title_activity_login">扫码枪登录</string>
+
+    <!-- 网络异常 -->
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="json_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <string name="url_code_error">url解析异常</string>
+    <string name="server_connect_error">连接服务器失败</string>
+
+    <!--加载中-->
+    <string name="progressbar_dialog_txt">loading</string>
+
+    <!--注册、登录、修改密码-->
+    <string name="reg_account">注册账号</string>
+    <string name="find_password">找回密码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="admin_name">员工姓名</string>
+    <string name="please_input_admin_name">请输入员工姓名</string>
+    <string name="telephone_number">手机号</string>
+    <string name="please_input_telephone_number">请输入手机号</string>
+    <string name="please_input_correct_telephone_number">请输入正确的手机号</string>
+    <string name="telephone_number_or_merchant_code">手机号/商户号</string>
+    <string name="please_input_telephone_number_or_merchant_code">请输入手机号/商户号</string>
+    <string name="verification_code">验证码</string>
+    <string name="please_input_verification_code">请输入验证码</string>
+    <string name="verification_code_send_success">验证码已发送到您的手机，请注意查收！</string>
+    <string name="password">输入登入密码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="merchant_name">商户名称</string>
+    <string name="please_input_merchant_name">请输入商户名称</string>
+    <string name="login_user_name">输入用户名/手机号</string>
+    <string name="please_input_user_name">请输入用户名</string>
+    <string name="login_merchant_code">商户号</string>
+    <string name="please_input_merchant_code">请输入商户号</string>
+    <string name="login">登入</string>
+    <string name="login_by_admin">管理员登录</string>
+    <string name="login_by_emp">员工登录</string>
+    <string name="original_password">原 密 码</string>
+    <string name="please_input_original_password">请输入原密码</string>
+    <string name="new_password">新 密 码</string>
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="please_input_confirm_password">请再次输入新密码</string>
+    <string name="please_input_password_not_different">确认密码与密码不一致</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="user_agreement_detail">《用户协议》</string>
+    <string name="login_success">登录成功</string>
+    <string name="loading">加载中...</string>
+    <string name="app_full_name">物料扫码管理</string>
+    <string name="in_scan">入库扫码</string>
+    <string name="out_scan">出库扫码</string>
+    <string name="change">库位调整</string>
+    <string name="machining">加工取料</string>
+    <string name="technical_support">全纸联提供技术支持</string>
+    <string name="website">www.quanzhilian.com</string>
+    <string name="confirm">确认</string>
+    <string name="download_in_bill">下载入库单</string>
+    <string name="scan_in_bill">扫描入库单</string>
+    <string name="scan_out_bill">扫码出库单</string>
+    <string name="download_out_bill">下载出库单</string>
+    <string name="scan_machining_bill">扫码加工单</string>
+    <string name="download_machining_bill">下载加工单</string>
+    <string name="scan_product">点击扫码商品</string>
+    <string name="check_in_bill">选定入库单</string>
+    <string name="change_scan">库位调整扫码</string>
+    <string name="check_out_bill">选定出库单</string>
+    <string name="check_machining_bill">选定加工单</string>
+    <string name="title_activity_in_repository_list">入库单列表</string>
+    <string name="title_activity_in_repository_detail">入库单详情</string>
+    <string name="title_activity_in_scan_result">入库扫码成功</string>
+    <string name="title_activity_out_repository_list">出库单列表</string>
+    <string name="title_activity_out_repository_detail">出库单详情</string>
+    <string name="title_activity_out_scan_result">出库扫码成功</string>
+    <string name="title_activity_change_scan_result">商品库位调整</string>
+    <string name="title_activity_machining_list">加工单列表</string>
+    <string name="title_activity_machining_scan_result">加工取料扫码成功</string>
+    <string name="title_activity_machining_detail">MachiningDetailActivity</string>
+    <string name="in_bill_list">入库单列表</string>
+    <string name="in_bill_detail">入库单详情</string>
+    <string name="in_bill_scan_success">入库单扫码成功</string>
+    <string name="machining_bill_list">加工单列表</string>
+    <string name="out_bill_list">出库单列表</string>
+    <string name="out_bill_detail">出库单详情</string>
+    <string name="machining_bill_detail">加工单详情</string>
+    <string name="in_repository_state_title">入库状态</string>
+    <string name="detail_scan_in_product">扫码入库商品</string>
+    <string name="approve_in_bill">入库审核</string>
+    <string name="title_product_info">商品信息</string>
+    <string name="scan_original_barcode">点击扫码原厂码</string>
+    <string name="scan_position_barcode">点击扫码库位码</string>
+    <string name="select_change_position">选择更改库位</string>
+    <string name="continue_scan_product">继续扫码</string>
+    <string name="show_detail">查看详情</string>
+    <string name="save_and_exit">保存退出</string>
+
+    <string name="service_bind_success">AIDL绑定成功</string>
+    <string name="service_bind_fail">AIDL绑定失败</string>
+    <string name="out_repository_state_title">出库状态</string>
+    <string name="detail_scan_out_product">扫码出库商品</string>
+    <string name="approve_out_bill">出库</string>
+    <string name="maching_scan_product">扫描分切原料</string>
+    <string name="approve_success">入库单审核成功</string>
+    <string name="out_bill_scan_success">出库扫码成功</string>
+    <string name="machining_scan_success">加工取料扫码成功</string>
+    <string name="maching_repository_state_title">加工状态</string>
+    <string name="cancel">取消</string>
+
+
+    <!-- 更新版本 -->
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_context">本次更新内容：\n1.系统功能优化；</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="soft_downing">最新版正在下载中，请稍后...</string>
+    <string name="scan_success">扫码成功</string>
+    <string name="in_bill_scan_fail">入库单扫码失败</string>
+    <string name="machining_scan_fail">加工取料扫码失败</string>
+    <string name="out_bill_scan_file">出库扫码失败</string>
+</resources>
